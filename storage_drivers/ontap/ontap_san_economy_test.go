@@ -4481,7 +4481,7 @@ func TestOntapSanEconomyInitialize(t *testing.T) {
 		DriverContext:     tridentconfig.ContextCSI,
 		DebugTraceFlags:   debugTraceFlags,
 	}
-	commonConfigJSON := fmt.Sprintf(`
+	commonConfigJSON := `
 	{
 	    "managementLIF":     "10.0.207.8",
 	    "dataLIF":           "10.0.207.7",
@@ -4493,7 +4493,7 @@ func TestOntapSanEconomyInitialize(t *testing.T) {
 	    "storagePrefix":     "san-eco",
 	    "debugTraceFlags":   {"method": true, "api": true},
 	    "version":1
-	}`)
+	}`
 	secrets := map[string]string{
 		"clientcertificate": "dummy-certificate",
 	}
@@ -4726,7 +4726,7 @@ func TestOntapSanEconomyInitialize_InvalidConfig(t *testing.T) {
 		DriverContext:     tridentconfig.ContextCSI,
 		DebugTraceFlags:   debugTraceFlags,
 	}
-	commonConfigJSON := fmt.Sprintf(`{invalid-json}`)
+	commonConfigJSON := `{invalid-json}`
 	secrets := map[string]string{
 		"clientcertificate": "dummy-certificate",
 	}
@@ -4747,7 +4747,7 @@ func TestOntapSanEconomyInitialize_NoDataLIFs(t *testing.T) {
 		DriverContext:     tridentconfig.ContextCSI,
 		DebugTraceFlags:   debugTraceFlags,
 	}
-	commonConfigJSON := fmt.Sprintf(`
+	commonConfigJSON := `
 	{
 	    "managementLIF":     "10.0.207.8",
 	    "dataLIF":           "10.0.207.7",
@@ -4759,7 +4759,7 @@ func TestOntapSanEconomyInitialize_NoDataLIFs(t *testing.T) {
 	    "storagePrefix":     "san-eco",
 	    "debugTraceFlags":   {"method": true, "api": true},
 	    "version":1
-	}`)
+	}`
 	secrets := map[string]string{
 		"clientcertificate": "dummy-certificate",
 	}
@@ -4865,7 +4865,7 @@ func TestOntapSanEconomyInitialize_OtherContext(t *testing.T) {
 		DriverContext:     tridentconfig.ContextCSI,
 		DebugTraceFlags:   debugTraceFlags,
 	}
-	commonConfigJSON := fmt.Sprintf(`
+	commonConfigJSON := `
 	{
 	    "managementLIF":     "10.0.207.8",
 	    "dataLIF":           "10.0.207.7",
@@ -4877,7 +4877,7 @@ func TestOntapSanEconomyInitialize_OtherContext(t *testing.T) {
 	    "storagePrefix":     "san-eco",
 	    "debugTraceFlags":   {"method": true, "api": true},
 	    "version":1
-	}`)
+	}`
 	secrets := map[string]string{
 		"clientcertificate": "dummy-certificate",
 	}
@@ -4915,7 +4915,7 @@ func TestOntapSanEconomyInitialize_NoSVMAggregates(t *testing.T) {
 		DriverContext:     tridentconfig.ContextCSI,
 		DebugTraceFlags:   debugTraceFlags,
 	}
-	commonConfigJSON := fmt.Sprintf(`
+	commonConfigJSON := `
 	{
 	    "managementLIF":     "10.0.207.8",
 	    "dataLIF":           "10.0.207.7",
@@ -4927,7 +4927,7 @@ func TestOntapSanEconomyInitialize_NoSVMAggregates(t *testing.T) {
 	    "storagePrefix":     "san-eco",
 	    "debugTraceFlags":   {"method": true, "api": true},
 	    "version":1
-	}`)
+	}`
 	secrets := map[string]string{
 		"clientcertificate": "dummy-certificate",
 	}
