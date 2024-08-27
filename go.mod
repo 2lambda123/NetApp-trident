@@ -49,14 +49,14 @@ require (
 	github.com/vishvananda/netlink v1.1.0
 	github.com/zcalusic/sysinfo v1.1.0
 	go.uber.org/multierr v1.11.0 // github.com/uber-go/multierr
-	golang.org/x/crypto v0.23.0 // github.com/golang/crypto
-	golang.org/x/net v0.25.0 // github.com/golang/net
+	golang.org/x/crypto v0.24.0 // github.com/golang/crypto
+	golang.org/x/net v0.26.0 // github.com/golang/net
 	golang.org/x/oauth2 v0.20.0 // github.com/golang/oauth2
-	golang.org/x/sys v0.20.0 // github.com/golang/sys
-	golang.org/x/text v0.15.0 // github.com/golang/text
+	golang.org/x/sys v0.21.0 // github.com/golang/sys
+	golang.org/x/text v0.16.0 // github.com/golang/text
 	golang.org/x/time v0.5.0 // github.com/golang/time
 	google.golang.org/api v0.180.0
-	google.golang.org/grpc v1.64.0 // github.com/grpc/grpc-go
+	google.golang.org/grpc v1.64.1 // github.com/grpc/grpc-go
 	google.golang.org/protobuf v1.34.1
 	k8s.io/api v0.28.10 // github.com/kubernetes/api
 	k8s.io/apiextensions-apiserver v0.28.10 // github.com/kubernetes/apiextensions-apiserver
@@ -73,8 +73,8 @@ require (
 	cloud.google.com/go/auth/oauth2adapt v0.2.2 // indirect
 	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	cloud.google.com/go/longrunning v0.5.7 // indirect
-	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.5.2 // indirect
-	github.com/Azure/azure-sdk-for-go/sdk/internal v1.7.0 // indirect
+	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.6.0 // indirect
+	github.com/Azure/azure-sdk-for-go/sdk/internal v1.8.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/keyvault/azsecrets v0.12.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/keyvault/internal v0.7.1 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/compute/armcompute/v5 v5.7.0 // indirect
@@ -159,8 +159,8 @@ require (
 	go.opentelemetry.io/otel/trace v1.24.0 // indirect
 	golang.org/x/mod v0.17.0 // indirect
 	golang.org/x/sync v0.7.0 // indirect
-	golang.org/x/term v0.20.0 // indirect
-	golang.org/x/tools v0.21.0 // indirect
+	golang.org/x/term v0.21.0 // indirect
+	golang.org/x/tools v0.21.1-0.20240508182429-e35e4ccd0d2d // indirect
 	google.golang.org/genproto v0.0.0-20240401170217-c3f982113cda // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240513163218-0867130af1f8 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240509183442-62759503f434 // indirect
